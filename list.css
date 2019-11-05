@@ -1,0 +1,295 @@
+.index {
+	background-image: url(../img/index_out.png);
+}
+
+.index:hover {
+	background-image: url(../img/index_on.png);
+}
+
+.role {
+	background-image: url(../img/role_out.png);
+}
+
+.role:hover {
+	background-image: url(../img/role_on.png);
+}
+
+.admin {
+	background-image: url(../img/admin_out.png);
+}
+
+.admin:hover {
+	background-image: url(../img/admin_out.png);
+}
+
+.fee {
+	background-image: url(../img/fee_out.png);
+}
+
+.fee:hover {
+	background-image: url(../img/fee_out.png);
+}
+
+.account {
+	background-image: url(../img/account_out.png);
+}
+
+.account:hover {
+	background-image: url(../img/admin_on.png);
+}
+
+.service {
+	background-image: url(../img/service_out.png);
+}
+
+.service:hover {
+	background-image: url(../img/service_on.png);
+}
+
+.bill {
+	background-image: url(../img/bill_out.png);
+}
+
+.bill:hover {
+	background-image: url(../img/bill_on.png);
+}
+
+.report {
+	background-image: url(../img/report_out.png);
+}
+
+.report:hover {
+	background-image: url(../img/report_on.png);
+}
+
+.information {
+	background-image: url(../img/information_out.png);
+}
+
+.information:hover {
+	background-image: url(../img/information_on.png);
+}
+
+.password {
+	background-image: url(../img/password_out.png);
+}
+
+.password:hover {
+	background-image: url(../img/password_on.png);
+}
+
+/*0.对网页做出统一的设置*/
+/*星是通用选择器,能选择一切元素*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*1.设置分区的尺寸和位置*/
+div {
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 960px;
+	height: 61px;
+}
+
+.menu {
+	height: 91px;
+}
+
+.core {
+	height: 410px;
+	/*留一条缝隙为了将来放渐变条*/
+	padding-top: 10px;
+}
+
+.cr {
+	width: 960px;
+	height: 50px;
+}
+
+.content {
+	width: 950px;
+	height: 390px;
+	border: 5px solid #8ac1db;
+}
+
+.content div {
+	width: 910px;
+	height: 40px;
+}
+
+.content .data {
+	height: 310px;
+}
+
+/*2.设置网页的背景*/
+body {
+	background-color: #0EA8D8;
+}
+
+.logo {
+	background-image: url(../img/top_bg.png);
+}
+
+.menu {
+	background-color: #0488BB;
+}
+
+.core {
+	background: url(../img/content_bg.png) repeat-x top;
+}
+
+.content {
+	background-color: #e8f3f8;
+}
+
+/*3.设置网页中的文本样式*/
+body {
+	font-family: "微软雅黑", "文泉驿正黑", "黑体";
+	font-size: 14px;
+}
+
+.logo {
+	text-align: right;
+	line-height: 61px;
+}
+
+.logo a {
+	margin-right: 40px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.logo a:hover {
+	font-weight: bold;
+}
+
+.cr p {
+	text-align: center;
+	color: #FFF;
+	line-height: 25px;
+}
+
+/*4.设置数据区表格的样式*/
+/*用CSS给表格加边框,table和td上都得加.*/
+.data table {
+	border: 1px solid #ccc;
+	/*边框合并必须写在table上*/
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.data td {
+	border: 1px solid #ccc;
+}
+
+.data thead tr {
+	height: 40px;
+	background-color: #fbedce;
+}
+
+.data tbody tr {
+	height: 32px;
+	background-color: #FFF;
+}
+
+.data td {
+	text-align: center;
+}
+
+.data thead tr {
+	font-weight: bold;
+}
+
+.data tbody tr:hover {
+	background-color: #f7f9fd;
+}
+
+.update {
+	padding-left: 15px;
+	background: url(../img/modification.png) no-repeat left;
+	border: 0;
+}
+
+.update:hover {
+	/*鼠标变手型*/
+	cursor: pointer;
+}
+
+/*5.对一些位置特殊的元素进行定位*/
+.logo img {
+	float: left;
+}
+
+.content {
+	/*仅以此div作为绝对定位的目标*/
+	position: relative;
+}
+
+.content .message {
+	width: 500px;
+	height: 80px;
+	border: 1px solid #F68A8A;
+	/*绝对定位*/
+	position: absolute;
+	top: 100px;
+	left: 225px;
+}
+
+.message img {
+	float: right;
+	margin: 5px;
+	/*手型*/
+	cursor: pointer;
+}
+
+.message p {
+	margin-left: 38px;
+	line-height: 80px;
+}
+
+.message {
+	background: #FDECEC url(../img/ok.png) no-repeat 10px 32.5px;
+}
+
+/*6.设置导航栏图标的样式*/
+.menu ul {
+	width: 960px;
+	height: 91px;
+	border: 1px solid yellow;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.menu li {
+	width: 68px;
+	height: 77px;
+	border: 1px solid yellow;
+	margin: 7px 14px;
+	float: left;
+}
+
+.index {
+	background-image: url(../img/index_out.png);
+}
+
+.index:hover {
+	background-image: url(../img/index_on.png);
+}
+
+.role {
+	background-image: url(../img/role_out.png);
+}
+
+.role:hover {
+	background-image: url(../img/role_on.png);
+}
+
+/*收尾:去掉调试过程中的边框*/
+div, .menu ul, .menu li {
+	border: 0;
+}
